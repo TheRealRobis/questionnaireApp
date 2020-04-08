@@ -10,6 +10,7 @@ import javax.persistence.Table;
 public class Answer {
 
     @Id
+    @Column(name = "id")
     private int id;
 
     @Column(name = "question_id")

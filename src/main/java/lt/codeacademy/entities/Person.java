@@ -8,11 +8,10 @@ import javax.persistence.*;
 public class Person {
 
     @Id
+    @Column(name = "id")
     private int id;
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "id")
     @Column(name = "name")
-    private String firstName;
+    private String name;
     @Column(name = "password")
     private String password;
 
@@ -20,7 +19,7 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
+                ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
@@ -33,12 +32,12 @@ public class Person {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {

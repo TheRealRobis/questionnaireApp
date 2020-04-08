@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "exam")
 public class Exam {
     @Id
+    @Column(name = "id")
     private int id;
     @Column(name = "subject")
     private String subject;

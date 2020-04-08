@@ -24,5 +24,7 @@
         <mapping class="lt.codeacademy.entities.Exam"/>
         <mapping class="lt.codeacademy.entities.Question"/>
         <mapping class="lt.codeacademy.entities.Answer"/>
+        <mapping class="lt.codeacademy.entities.PersonAnswers"/>
+        <mapping class="lt.codeacademy.entities.Result"/>
     </session-factory>
 </hibernate-configuration>
